@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "name": "1984",
+        "title": "A dystopian novel set in a totalitarian society ruled by Big Brother.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "title": "The journey of a young boy discovering his magical heritage.",
+        "price": 14.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 3,
+        "name": "The Hobbit",
+        "title": "A fantasy adventure of a hobbit named Bilbo Baggins.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "title": "A story of wealth, love, and the American Dream in the 1920s.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 5,
+        "name": "To Kill a Mockingbird",
+        "title": "A tale of racial injustice and moral growth in the Deep South.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Pride and Prejudice",
+        "title": "A romantic story of manners and marriage in early 19th century England.",
+        "price": 7.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 7,
+        "name": "The Book Thief",
+        "title": "A young girl in Nazi Germany finds solace in stealing books.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Moby Dick",
+        "title": "The quest of Captain Ahab to hunt the elusive white whale.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 9,
+        "name": "The Catcher in the Rye",
+        "title": "A story about teenage angst and alienation in post-war America.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 10,
+        "name": "One Hundred Years of Solitude",
+        "title": "The multi-generational story of the Buendía family in the fictional town of Macondo.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 11,
+        "name": "A Game of Thrones",
+        "title": "The epic tale of political intrigue and war in the Seven Kingdoms of Westeros.",
+        "price": 15.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 12,
+        "name": "Frankenstein",
+        "title": "The tragic story of a scientist who creates a sentient creature.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 13,
+        "name": "The Handmaid's Tale",
+        "title": "A dystopian future where women are subjugated in a totalitarian regime.",
+        "price": 11.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Sherlock Holmes: The Complete Collection",
+        "title": "The adventures of the famous detective Sherlock Holmes and his companion Watson.",
+        "price": 16.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 15,
+        "name": "The War of the Worlds",
+        "title": "An alien invasion threatens humanity's survival in this science fiction classic.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 16,
+        "name": "The Shining",
+        "title": "A chilling tale of isolation and supernatural horror in a haunted hotel.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Fahrenheit 451",
+        "title": "A dystopian future where books are banned and 'firemen' burn them.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 18,
+        "name": "War and Peace",
+        "title": "A historical novel that intertwines the lives of characters during the Napoleonic Wars.",
+        "price": 19.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Wuthering Heights",
+        "title": "A passionate and tumultuous love story set on the Yorkshire moors.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 20,
+        "name": "Brave New World",
+        "title": "A dystopian vision of a technologically advanced future where society is controlled.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 21,
+        "name": "The Alchemist",
+        "title": "A philosophical journey of a shepherd in search of his personal legend.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Dracula",
+        "title": "The iconic vampire novel that started it all, set in 19th century England.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Jane Eyre",
+        "title": "A tale of a young orphan's journey towards love, independence, and finding her place.",
+        "price": 8.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 24,
+        "name": "Animal Farm",
+        "title": "A political allegory about the rise of totalitarianism in a farm setting.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Les Misérables",
+        "title": "A story of justice, love, and redemption in revolutionary France.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Don Quixote",
+        "title": "A satire of chivalric romances featuring the adventures of a nobleman and his squire.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 27,
+        "name": "Gone with the Wind",
+        "title": "A historical epic set during the American Civil War and Reconstruction.",
+        "price": 14.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 28,
+        "name": "The Divine Comedy",
+        "title": "Dante's journey through Hell, Purgatory, and Paradise.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 29,
+        "name": "The Brothers Karamazov",
+        "title": "A Russian novel about faith, doubt, and moral struggles within a family.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 30,
+        "name": "Anna Karenina",
+        "title": "A tragic tale of love and society in Imperial Russia.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Dune",
+        "title": "A science fiction epic about political intrigue and survival on a desert planet.",
+        "price": 13.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Crime and Punishment",
+        "title": "A psychological drama about guilt, redemption, and the morality of crime.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 33,
+        "name": "The Odyssey",
+        "title": "The ancient Greek epic about Odysseus' journey home after the Trojan War.",
+        "price": 7.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 34,
+        "name": "The Scarlet Letter",
+        "title": "A story of sin, guilt, and redemption in Puritan New England.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 35,
+        "name": "The Picture of Dorian Gray",
+        "title": "A gothic novel about vanity, moral corruption, and the consequences of eternal youth.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 36,
+        "name": "The Wind-Up Bird Chronicle",
+        "title": "A surreal novel about a man searching for his missing wife in Tokyo.",
+        "price": 11.99,
+        "category": "Paid",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Heart of Darkness",
+        "title": "A novella exploring colonialism and the darkness within humanity.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/02.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Catch-22",
+        "title": "A satirical novel about the absurdities of war and bureaucracy.",
+        "price": 8.99,
+        "category": "Paid",
+        "image": "images/onebook.svg"
+    },
+    {
+        "id": 39,
+        "name": "The Road",
+        "title": "A post-apocalyptic novel about a father and son's survival.",
+        "price": 0,
+        "category": "Free",
+        "image": "images/03.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Ulysses",
+        "title": "An experimental novel that parallels Homer's Odyssey in modern-day Dublin.",
+        "price": 16.99,
+        "category": "Paid",
+        "image": "images/02.jpg"
+    }
+]
