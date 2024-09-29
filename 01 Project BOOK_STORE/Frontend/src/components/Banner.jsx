@@ -14,7 +14,7 @@ function Banner() {
 
                         {/* This is Heading  */}
                         <div className='text-4xl font-bold'>
-                            <h1>Welcome to <span className='text-pink-600'>MyBookStore,</span></h1>
+                            <h1>Welcome to <span className='text-pink-600'>BookNest,</span></h1>
                             <h1 className='md:mt-2 mt-3'>Where Every Story <span className='text-pink-500'>Begins!</span></h1>
                         </div>
 

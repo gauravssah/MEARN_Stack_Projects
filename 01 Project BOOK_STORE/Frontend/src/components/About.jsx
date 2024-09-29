@@ -80,7 +80,7 @@ function About() {
                                     <span className=' dark:bg-slate-900 dark:text-white text-pink-600'>{openIndex === index ? '-' : '+'}</span>
                                 </button>
                                 {openIndex === index && (
-                                    <div className=' dark:bg-slate-900 dark:text-white p-4 mt-2 text-gray-600 bg-gray-50 rounded-lg'>
+                                    <div className=' dark:bg-slate-800 dark:text-white p-4 mt-2 text-gray-600 bg-gray-50 rounded-lg'>
                                         {faq.answer}
                                     </div>
                                 )}

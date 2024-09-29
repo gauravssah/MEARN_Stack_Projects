@@ -89,7 +89,7 @@ function Navbar() {
                         </div>
 
                         {/* This is Logo */}
-                        <Link to="/" className=" cursor-pointer text-pink-600 font-bold md:text-3xl">MyBookStore</Link>
+                        <Link to="/" className=" cursor-pointer text-pink-600 font-bold md:text-3xl">BookNest</Link>
 
                     </div>
 
