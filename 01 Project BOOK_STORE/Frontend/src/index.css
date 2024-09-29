@@ -8,3 +8,17 @@
 body {
     font-family: "Poppins", sans-serif
 }
+
+
+/* To enhance the card with hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for scaling and shadow */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect on hover */
+    transform: translateY(-5px);
+    /* Move the card up slightly */
+}

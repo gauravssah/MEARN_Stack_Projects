@@ -5,7 +5,7 @@
         "title": "A dystopian novel set in a totalitarian society ruled by Big Brother.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "title": "The journey of a young boy discovering his magical heritage.",
         "price": 14.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "title": "A fantasy adventure of a hobbit named Bilbo Baggins.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "title": "A story of wealth, love, and the American Dream in the 1920s.",
         "price": 10.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "title": "A tale of racial injustice and moral growth in the Deep South.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "title": "A romantic story of manners and marriage in early 19th century England.",
         "price": 7.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "title": "A young girl in Nazi Germany finds solace in stealing books.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "title": "The quest of Captain Ahab to hunt the elusive white whale.",
         "price": 9.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "title": "A story about teenage angst and alienation in post-war America.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "title": "The multi-generational story of the Buendía family in the fictional town of Macondo.",
         "price": 12.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "title": "The epic tale of political intrigue and war in the Seven Kingdoms of Westeros.",
         "price": 15.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "title": "The tragic story of a scientist who creates a sentient creature.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "title": "A dystopian future where women are subjugated in a totalitarian regime.",
         "price": 11.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "title": "The adventures of the famous detective Sherlock Holmes and his companion Watson.",
         "price": 16.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "title": "An alien invasion threatens humanity's survival in this science fiction classic.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "title": "A chilling tale of isolation and supernatural horror in a haunted hotel.",
         "price": 12.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "title": "A dystopian future where books are banned and 'firemen' burn them.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "title": "A historical novel that intertwines the lives of characters during the Napoleonic Wars.",
         "price": 19.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "title": "A passionate and tumultuous love story set on the Yorkshire moors.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "title": "A dystopian vision of a technologically advanced future where society is controlled.",
         "price": 10.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "title": "A philosophical journey of a shepherd in search of his personal legend.",
         "price": 9.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 22,
@@ -173,7 +173,7 @@
         "title": "The iconic vampire novel that started it all, set in 19th century England.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 23,
@@ -181,7 +181,7 @@
         "title": "A tale of a young orphan's journey towards love, independence, and finding her place.",
         "price": 8.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 24,
@@ -189,7 +189,7 @@
         "title": "A political allegory about the rise of totalitarianism in a farm setting.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 25,
@@ -197,7 +197,7 @@
         "title": "A story of justice, love, and redemption in revolutionary France.",
         "price": 12.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "title": "A satire of chivalric romances featuring the adventures of a nobleman and his squire.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 27,
@@ -213,7 +213,7 @@
         "title": "A historical epic set during the American Civil War and Reconstruction.",
         "price": 14.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 28,
@@ -221,7 +221,7 @@
         "title": "Dante's journey through Hell, Purgatory, and Paradise.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 29,
@@ -229,7 +229,7 @@
         "title": "A Russian novel about faith, doubt, and moral struggles within a family.",
         "price": 10.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 30,
@@ -237,7 +237,7 @@
         "title": "A tragic tale of love and society in Imperial Russia.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 31,
@@ -245,7 +245,7 @@
         "title": "A science fiction epic about political intrigue and survival on a desert planet.",
         "price": 13.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 32,
@@ -253,7 +253,7 @@
         "title": "A psychological drama about guilt, redemption, and the morality of crime.",
         "price": 0,
         "category": "Free",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 33,
@@ -261,7 +261,7 @@
         "title": "The ancient Greek epic about Odysseus' journey home after the Trojan War.",
         "price": 7.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 34,
@@ -269,7 +269,7 @@
         "title": "A story of sin, guilt, and redemption in Puritan New England.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 35,
@@ -277,7 +277,7 @@
         "title": "A gothic novel about vanity, moral corruption, and the consequences of eternal youth.",
         "price": 9.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 36,
@@ -285,7 +285,7 @@
         "title": "A surreal novel about a man searching for his missing wife in Tokyo.",
         "price": 11.99,
         "category": "Paid",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 37,
@@ -293,7 +293,7 @@
         "title": "A novella exploring colonialism and the darkness within humanity.",
         "price": 0,
         "category": "Free",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     },
     {
         "id": 38,
@@ -301,7 +301,7 @@
         "title": "A satirical novel about the absurdities of war and bureaucracy.",
         "price": 8.99,
         "category": "Paid",
-        "image": "images/onebook.svg"
+        "image": "src/assets/images/onebook.svg"
     },
     {
         "id": 39,
@@ -309,7 +309,7 @@
         "title": "A post-apocalyptic novel about a father and son's survival.",
         "price": 0,
         "category": "Free",
-        "image": "images/03.jpg"
+        "image": "src/assets/images/03.jpg"
     },
     {
         "id": 40,
@@ -317,6 +317,6 @@
         "title": "An experimental novel that parallels Homer's Odyssey in modern-day Dublin.",
         "price": 16.99,
         "category": "Paid",
-        "image": "images/02.jpg"
+        "image": "src/assets/images/02.jpg"
     }
 ]

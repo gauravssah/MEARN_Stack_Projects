@@ -3,27 +3,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import dataList from "../../public/list.json";
+import dataList from "../assets/list.json";
 import Card from './Card';
 
 function Freebook() {
 
     const filterData = dataList.filter((data) => data.category === "Free");
 
-    console.log(filterData.length)
+    // Limit the filtered data to only 9 items
+    const limitedData = filterData.slice(0, 9);
 
     // Function to limit characters and add ellipsis
     const limitText = (text, limit) => {
         return text.length > limit ? text.substring(0, limit) + '...' : text;
     };
 
-
-
-    // This is for 
-    //     React Slick
-    // The Last React Carousel You'll Ever Need!
-
-
+    // React Slick settings
     var settings = {
         dots: true,
         infinite: false,
@@ -61,7 +56,7 @@ function Freebook() {
 
     return (
         <>
-            <div className='w-full bg-slate-50 '>
+            <div className='w-full dark:bg-slate-900 dark:text-white bg-slate-50 '>
 
                 <div className='w-[100%] lg:w-[98%] text-center md:text-left mx-auto md:px-8 lg:px-20 p-5 '>
 
@@ -71,17 +66,16 @@ function Freebook() {
                     </div>
 
                     {/* This contains free courses cards */}
-                    <div className='mt-8 mb-8 '>
+                    <div className='mt-8 mb-8'>
 
-                        <div className="slider-container ">
+                        <div className="slider-container">
 
                             <Slider {...settings}>
                                 {
-                                    filterData.map((item) => (
+                                    limitedData.map((item) => (
                                         <Card item={item} key={item.id} />
                                     ))
                                 }
-
                             </Slider>
 
                         </div>
@@ -93,6 +87,3 @@ function Freebook() {
 }
 
 export default Freebook;
-
-
-
