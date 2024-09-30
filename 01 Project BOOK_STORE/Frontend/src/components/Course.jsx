@@ -1,21 +1,48 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import listData from "../assets/list.json";
+// import book from "../assets/list.json";
 import Card from './Card';
+import axios from "axios";  // this is for backend data
 
 function Course() {
+
+    // Getting Data from Backend.
+
+    const [book, setBook] = useState([]);
+
+    useEffect(() => {
+        const getBook = async () => {
+            try {
+                const res = await axios.get("http://localhost:4001/book");
+                // console.log(res.data);
+                setBook(res.data);
+
+            } catch (error) {
+                console.log("Error: ", error);
+
+            }
+        }
+
+        getBook();
+    }, []);
+
+
+
+    // ---------------------------------------
+
+
     const [currentPage, setCurrentPage] = useState(0);
     const cardsPerPage = 6;
 
     // Calculate the index range of the cards to be displayed
     const startIndex = currentPage * cardsPerPage;
     const endIndex = startIndex + cardsPerPage;
-    const currentCards = listData.slice(startIndex, endIndex);
+    const currentCards = book.slice(startIndex, endIndex);
 
     // Handle clicking "Next" button
     const handleNext = () => {
-        if (endIndex < listData.length) {
+        if (endIndex < book.length) {
             setCurrentPage(prevPage => prevPage + 1);
         }
     };
@@ -75,7 +102,7 @@ function Course() {
                         <button
                             className="btn  dark:text-white btn-secondary"
                             onClick={handleNext}
-                            disabled={endIndex >= listData.length}>
+                            disabled={endIndex >= book.length}>
                             Next
                         </button>
                     </div>
