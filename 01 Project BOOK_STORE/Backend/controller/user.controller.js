@@ -29,7 +29,15 @@ export const signup = async (req, res) => {
         });
 
         await createdUser.save();
-        res.status(201).json({ message: "User created successfully!" });
+        res.status(201).json({
+            message: "User created successfully!",
+            user: {
+                _id: createdUser._id,
+                fullname: createdUser.fullname,
+                email: createdUser.email,
+                mobileNumber: createdUser.mobileNumber,
+            }
+        });
 
     } catch (error) {
         console.log("Error from signUp: ", error);
@@ -56,7 +64,7 @@ export const login = async (req, res) => {
                     _id: isUser._id,
                     fullname: isUser.fullname,
                     email: isUser.email,
-                    number: isUser.mobileNumber,
+                    mobileNumber: isUser.mobileNumber,
                 }
             });
         }

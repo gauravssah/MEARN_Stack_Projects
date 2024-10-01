@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 function Login() {
     const {
@@ -8,9 +10,36 @@ function Login() {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
-        console.log(data);
-        // Add your login logic here
+    const onSubmit = async (data) => {
+        const userInfo = {
+            fullname: data.fullname,
+            email: data.email,
+            mobileNumber: data.mobileNumber,
+            password: data.password
+        }
+
+        await axios.post("http://localhost:4001/user/login", userInfo)
+            .then((res) => {
+                console.log(res.data);
+
+                if (res.data) {
+                    // alert("Login successful!");
+                    toast.success('Login successful!');
+
+                }
+                localStorage.setItem("Users", JSON.stringify(res.data.user));
+                window.location.reload();
+
+
+            }).catch((err) => {
+                if (err.response) {
+                    console.log("Error Response: ", err.response.data); // Log full error response
+                    // alert(`Error: ${err.response.data.message || "Something went wrong"}`);
+                    toast.error(`Error: ${err.response.data.message || "Something went wrong"}`);
+                } else {
+                    console.error("Error", err);
+                }
+            });
     };
 
     return (
@@ -59,7 +88,7 @@ function Login() {
                 </form>
 
                 {/* Additional Links */}
-                <div className="mt-4 flex justify-between text-sm">
+                <div className="mt-4 flex flex-col md:flex-row gap-3 justify-between text-sm">
                     <a href="#" className="text-pink-500 hover:underline hover:text-pink-700 dark:text-pink-500">Forgot Password?</a>
                     <p className="dark:text-gray-400 text-gray-600">Not registered? <a href="/signup" className="text-pink-500 hover:text-pink-700 dark:text-pink-500 hover:underline">Sign up</a></p>
                 </div>

@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { json, Link, useLocation, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from 'react-hot-toast';
 
 function Signup({ onClose }) {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const form = location.state?.form?.pathname || "/";
+
+
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
     useEffect(() => {
@@ -28,20 +36,49 @@ function Signup({ onClose }) {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
-        console.log(data);
-        // Add your login logic here
+    const onSubmit = async (data) => {
+        // console.log(data);
+
+        const userInfo = {
+            fullname: data.fullname,
+            email: data.email,
+            mobileNumber: data.mobileNumber,
+            password: data.password
+        }
+
+        await axios.post("http://localhost:4001/user/signup", userInfo)
+            .then((res) => {
+                console.log(res.data);
+
+                if (res.data) {
+                    // alert("Signup Successfully!");
+                    toast.success('Signup Successfully!');
+                    navigate(form, {replace: true});
+                }
+                localStorage.setItem("Users", JSON.stringify(res.data.user));
+            
+            }).catch((err) => {
+                console.log("Login Error: ", err);
+                if (err.response) {
+                    console.log("Error Response: ", err.response.data); // Log full error response
+                    // alert(`Error: ${err.response.data.message || "Something went wrong"}`);
+                    toast.error(`Error: ${err.response.data.message || "Something went wrong"}`);
+                } else {
+                    console.error("Error", err);
+                }
+            });
+
     };
 
     return (
-        <div className="flex justify-center items-center p-10 w-[95%] m-auto bg-slate-50 dark:bg-slate-900">
+        <div className="flex justify-center items-center md:p-10 p-2 w-[95%] m-auto bg-slate-50 dark:bg-slate-900">
             <div className="w-full max-w-md md:p-8 p-3 space-y-6 bg-white dark:bg-slate-800 shadow-lg rounded-lg relative">
                 {/* Close Button */}
                 <Link to="/" className="hover:dark:bg-slate-700 dark:text-white btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</Link>
 
                 {/* Signup Form Header */}
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-pink-600 dark:text-pink-500">Create an Account</h2>
+                    <h2 className="md:text-3xl text-2xl font-bold text-pink-600 dark:text-pink-500">Create an Account</h2>
                     <p className="text-gray-600 dark:text-gray-400">Join us and get started today!</p>
                 </div>
 
@@ -49,15 +86,15 @@ function Signup({ onClose }) {
                 <form className="space-y-4 " onSubmit={handleSubmit(onSubmit)}>
                     {/* Name Field */}
                     <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                        <label htmlFor="fullname" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
                         <input
-                            id="name"
+                            id="fullname"
                             type="text"
-                            placeholder="Enter your name"
+                            placeholder="Enter your fullname"
                             className="w-full mt-1 p-2 border rounded-md dark:bg-slate-700 dark:text-white dark:border-slate-600 focus:ring-pink-600 focus:border-pink-600"
-                            {...register("name", { required: "name is required." })}
+                            {...register("fullname", { required: "fullname is required." })}
                         />
-                        {errors.name && <span className='text-sm text-red-500'>{errors.name.message}</span>}
+                        {errors.fullname && <span className='text-sm text-red-500'>{errors.fullname.message}</span>}
                     </div>
 
                     {/* Email Field */}
@@ -76,16 +113,16 @@ function Signup({ onClose }) {
 
                     {/* Mobile Number Field */}
                     <div>
-                        <label htmlFor="mobile" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Mobile Number</label>
+                        <label htmlFor="mobileNumber" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Mobile Number</label>
                         <input
-                            id="mobile"
+                            id="mobileNumber"
                             type="tel"
                             placeholder="Enter your mobile number"
                             className="w-full mt-1 p-2 border rounded-md dark:bg-slate-700 dark:text-white dark:border-slate-600 focus:ring-pink-600 focus:border-pink-600"
                             pattern="[0-9]{10}" // Optional: To enforce a 10-digit mobile number format
-                            {...register("mobile", { required: "mobile is required." })}
+                            {...register("mobileNumber", { required: "Mobile Number is required." })}
                         />
-                        {errors.mobile && <span className='text-sm text-red-500'>{errors.mobile.message}</span>}
+                        {errors.mobileNumber && <span className='text-sm text-red-500'>{errors.mobileNumber.message}</span>}
                     </div>
 
                     {/* Password Field */}

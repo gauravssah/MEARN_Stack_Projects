@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Login from './Login';
+import { useAuth } from '../context/AuthProvider';
+import Logout from './Logout';
 
 function Navbar() {
+
+    // This will give the login user 
+
+    const [authUser, setAuthUser] = useAuth();
+    // console.log(authUser);
+
+
+
 
     // This is for Dark and Light mode
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
@@ -153,14 +163,16 @@ function Navbar() {
                             </label>
                         </div>
 
-                        <div className="">
-                            <Link className="btn hover:bg-pink-500 hover:text-white transition-all"
-                                onClick={() => document.getElementById("my_modal_3").showModal()}
-                            >
-                                Login
-                            </Link>
-                            <Login />
-                        </div>
+                        {
+                            authUser ? <Logout /> : <div className="">
+                                <Link className="btn hover:bg-pink-500 hover:text-white transition-all"
+                                    onClick={() => document.getElementById("my_modal_3").showModal()}
+                                >
+                                    Login
+                                </Link>
+                                <Login />
+                            </div>
+                        }
 
                     </div>
 
