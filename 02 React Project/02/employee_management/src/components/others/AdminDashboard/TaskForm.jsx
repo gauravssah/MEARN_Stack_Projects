@@ -30,7 +30,7 @@ function TaskForm() {
 
 
     return (
-        <div className='w-1/2 m-auto'>
+        <div className='md:w-1/2 m-auto'>
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Create Task</h2>
             <form
                 onSubmit={HandelTaskForm}

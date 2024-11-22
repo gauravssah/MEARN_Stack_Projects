@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Login = () => {
+const Login = (props) => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -9,8 +9,8 @@ const Login = () => {
     const submitHandler = (e) => {
         e.preventDefault();
         console.log("form submit");
-        console.log("Email is: ", email);
-        console.log("password is: ", password);
+
+        props.handleLogin(email, password);
 
         // clear the email and password field.
         setEmail("");
@@ -18,7 +18,7 @@ const Login = () => {
     }
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gradient-to-br from-blue-700 to-blue-900">
+        <div className="flex p-2 items-center justify-center h-screen bg-gradient-to-br from-blue-700 to-blue-900">
             <div className="bg-white bg-opacity-20 backdrop-blur-md border border-white/30 rounded-lg shadow-lg p-6 w-96">
                 <h1 className="text-2xl font-semibold text-white text-center mb-6">Login</h1>
                 <form
