@@ -2,33 +2,84 @@ import React, { useContext, useEffect, useState } from 'react'
 import Login from './components/Auth/Login'
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './components/Dashboard/AdminDashboard'
-import { getLocalStorage, setLocalStorage } from './utils/localStorage.jsx'
-import { AuthContext } from './context/AuthProvider.jsx'
+import { AuthContext } from './context/AuthProvider'
 
 function App() {
 
   const [user, setUser] = useState(null);
+  const [loggedInUserData, setLoggedInUserData] = useState(null);
+  const authData = useContext(AuthContext);
+
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+
+    if (loggedInUser) {
+      const userData = JSON.parse(loggedInUser);
+      setUser(userData.role);
+      setLoggedInUserData(userData.persone);
+    }
+
+  }, []);
+
 
   // This will maching the user login data.
   const handleLogin = (email, password) => {
-    if (email == 'admin@me.com' && password == '123') {
-      setUser('admin');
-    } else if (email == 'user@me.com' && password == '123') {
-      setUser('employee');
+
+    let findedAdmin;
+    let findedEmployee;
+
+
+    if (authData && authData.admin && authData.employees) {
+      findedAdmin = authData.admin.find((e) => email == e.email && e.password == password);
+      findedEmployee = authData.employees.find((e) => email == e.email && e.password == password);
+
+    }
+
+
+    if (authData && findedAdmin) {
+
+      if (findedAdmin) {
+        setUser('admin');
+        setLoggedInUserData(findedAdmin);
+        localStorage.setItem('loggedInUser', JSON.stringify({ role: 'admin', persone: findedAdmin }));
+
+      }
+
+
+    } else if (authData && findedEmployee) {
+
+      if (findedEmployee) {
+        setUser('employee');
+        setLoggedInUserData(findedEmployee);
+        localStorage.setItem('loggedInUser', JSON.stringify({ role: 'employee', persone: findedEmployee }));
+
+      }
+
     }
     else {
       alert("Invalid Credentials");
     }
+
   }
 
-  const data = useContext(AuthContext);
-  console.log("Data is  : ", data);
+
 
   return (
     <>
-      {!user ? <Login handleLogin={handleLogin} /> : ""}
-      {user == 'admin' ? <AdminDashboard /> : ""}
-      {user == 'employee' ? <EmployeeDashboard /> : ""}
+
+      {!user ? <Login handleLogin={handleLogin} /> : null}
+      {user === 'admin' && loggedInUserData ? <AdminDashboard loggedInUserData={loggedInUserData} /> : null}
+      {user === 'employee' && loggedInUserData ? (
+        <EmployeeDashboard loggedInUserData={loggedInUserData} />
+      ) : null}
+
+      {/* ------------------------ */}
+
+      {/* {!loggedin.role ? <Login handleLogin={handleLogin} /> : ""}
+      {loggedin.role == 'admin' ? <AdminDashboard /> : ""}
+      {loggedin.role == 'employee' ? <EmployeeDashboard /> : ""} */}
+
     </>
   )
 }
