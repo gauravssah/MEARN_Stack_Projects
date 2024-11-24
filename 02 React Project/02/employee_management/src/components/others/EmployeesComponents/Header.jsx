@@ -1,38 +1,40 @@
-import React from 'react'
+import React from 'react';
 
 function Header({ name }) {
-    let firstname;
-    if (name) {
-        firstname = name.split(' ');
-    }
+    let firstName = name ? name.split(' ')[0] : 'User'; // Extract first name or default to "User"
 
+    // Handle logout logic
     const handleLogout = () => {
-        // Parse the current loggedInUser data
-        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")) || {};
-        // Update the role to null
+        const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser')) || {};
         loggedInUser.role = null;
-        loggedInUser.persone = null;
-        // Save the updated object back to localStorage
-        localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
-        // Reload the page
-        window.location.reload();
-    }
+        loggedInUser.person = null;
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+        window.location.reload(); // Reload to reset state
+    };
 
     return (
-        <div className="flex justify-between items-center mb-6">
-            {/* Left: Greeting */}
-            <div>
-                <h1 className="text-xl  text-gray-800">Hello,</h1>
-                <p className="text-2xl font-bold text-black">{name ? firstname[0] : "user"}<span>&#128075; </span></p>
-            </div>
-            {/* Right: Logout Button */}
-            <button onClick={() => handleLogout()}
-                className="px-4 py-2 bg-red-500 text-white rounded-lg font-medium hover:bg-red-600">
-                Logout
-            </button>
-        </div>
+        <div className="sticky top-0 z-50 bg-gray-100 mb-5 py-4 px-6 shadow-md rounded-b-lg">
+            {/* Header Content */}
+            <div className="flex justify-between items-center">
+                {/* Greeting Section */}
+                <div>
+                    <h1 className="text-lg text-gray-700">Welcome Back,</h1>
+                    <p className="text-2xl font-bold text-gray-900 flex items-center">
+                        {firstName}
+                        <span className="ml-2 text-yellow-400 text-3xl">👋</span>
+                    </p>
+                </div>
 
-    )
+                {/* Logout Button */}
+                <button
+                    onClick={handleLogout}
+                    className="bg-red-500 text-white px-5 py-2 rounded-lg shadow hover:bg-red-600 transition duration-200 focus:outline-none focus:ring-2 focus:ring-red-400"
+                >
+                    Logout
+                </button>
+            </div>
+        </div>
+    );
 }
 
-export default Header
+export default Header;
