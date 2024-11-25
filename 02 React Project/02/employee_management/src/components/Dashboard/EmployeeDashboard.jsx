@@ -7,16 +7,11 @@ import TaskList from '../TaskList/TaskList';
 function EmployeeDashboard(props) {
 
     const { email, name, tasks } = props.loggedInUserData;
-    // console.log(name)
-    // console.log(email)
-    // console.log(tasks.length)
-    // const t = Array.from(tasks);
-    // console.log(t.length)
-
+  
     return (
         <div className="min-h-screen p-4 bg-gray-100">
             {/* Header Section */}
-            <Header name={name} />
+            <Header changeUser={props.changeUser} name={name} />
 
             {/* Boxes Section */}
             <BoxesSection tasks={tasks} />

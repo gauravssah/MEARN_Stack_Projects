@@ -9,7 +9,7 @@ function AdminDashboard(props) {
 
     return (
         <div className='p-3 bg-[#DBEAFE] pb-8'>
-            <Header name={name} />
+            <Header changeUser={props.changeUser} name={name} />
             <div className="md:p-6">
                 <TaskForm />
             </div>

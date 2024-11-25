@@ -1,15 +1,18 @@
 import React from 'react';
 
-function Header({ name }) {
+function Header(props) {
+
+    const { name, changeUser } = props;
     let firstName = name ? name.split(' ')[0] : 'User'; // Extract first name or default to "User"
 
     // Handle logout logic
     const handleLogout = () => {
         const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser')) || {};
         loggedInUser.role = null;
-        loggedInUser.person = null;
+        loggedInUser.persone = null;
         localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
-        window.location.reload(); // Reload to reset state
+        // window.location.reload(); // Reload to reset state
+        changeUser("");
     };
 
     return (

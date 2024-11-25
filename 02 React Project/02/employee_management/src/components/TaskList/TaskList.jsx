@@ -11,7 +11,7 @@ function TaskList(props) {
 
     return (
         <div id="taskLists" className="bg-[#DBEAFE] rounded overflow-x-auto p-4 mt-5">
-            <div className="md:flex md:space-x-4 ">
+            <div className="md:flex md:space-x-4  justify-center ">
                 {tasks.map((task, idx) => {
                     const randomColor = generateRandomColor(); // Generate random color
                     return (

@@ -69,9 +69,9 @@ function App() {
     <>
 
       {!user ? <Login handleLogin={handleLogin} /> : null}
-      {user === 'admin' && loggedInUserData ? <AdminDashboard loggedInUserData={loggedInUserData} /> : null}
+      {user === 'admin' && loggedInUserData ? <AdminDashboard changeUser={setUser} loggedInUserData={loggedInUserData} /> : null}
       {user === 'employee' && loggedInUserData ? (
-        <EmployeeDashboard loggedInUserData={loggedInUserData} />
+        <EmployeeDashboard changeUser={setUser} loggedInUserData={loggedInUserData} />
       ) : null}
 
       {/* ------------------------ */}

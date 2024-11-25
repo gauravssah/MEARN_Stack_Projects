@@ -1,6 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../../context/AuthProvider';
 
 function TaskForm() {
+
+    // Geting Data from authcontext
+    const authData = useContext(AuthContext); // Get employee data from AuthContext
+    const authDataEmployees = authData.employees; // Destructure employee data
+
+    // console.log(authData)
+
+    // Created Task
+    const [task, setTask] = useState({});
+
     // State for form inputs
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -11,12 +22,32 @@ function TaskForm() {
     // Handle form submission
     const handleTaskForm = (e) => {
         e.preventDefault();
-        console.log("Task Created:");
-        console.log("Title: ", title);
-        console.log("Description: ", description);
-        console.log("Date: ", date);
-        console.log("Assign To: ", assignTo);
-        console.log("Category: ", category);
+
+        // Setting Task
+        // setTask({
+        //     "title": title,
+        //     "description": description,
+        //     "date": date,
+        //     "category": category,
+        //     "active": false,
+        //     "newTask": true,
+        //     "completed": false,
+        //     "failed": false,
+        // })
+
+        // Create the new task object
+        const newTask = {
+            title: title,
+            description: description,
+            date: date,
+            category: category,
+            active: false,
+            newTask: true,
+            completed: false,
+            failed: false,
+        };
+
+        assignTheTask(assignTo, newTask);
 
         // Clear form fields after submission
         setTitle('');
@@ -24,7 +55,35 @@ function TaskForm() {
         setDate('');
         setAssignTo('');
         setCategory('');
+
+
     };
+
+    const assignTheTask = (assignTo, newTask) => {
+        // Retrieve the employees from localStorage
+        // const employees = JSON.parse(localStorage.getItem("employees"));
+        const employees = authDataEmployees;
+
+        // Find the employee to assign the task to
+        const assignedEmployee = employees.find((emp) => emp.email === assignTo);
+
+        if (assignedEmployee) {
+            // Push the new task to the employee's task list
+            assignedEmployee.tasks.push(newTask);
+
+            // Save the updated employees array back to localStorage
+            // localStorage.setItem("employees", JSON.stringify(employees));
+
+            // Optionally, log the updated tasks for that employee
+            // console.log("Updated tasks for employee: ", assignedEmployee.tasks);
+        } else {
+            console.log("Employee not found");
+        }
+    };
+
+
+    // console.log("End : ", task);
+
 
     return (
         <div className="md:w-2/3 lg:w-1/2 mx-auto p-6 bg-gray-50 shadow-lg rounded-lg">
@@ -81,20 +140,32 @@ function TaskForm() {
                 </div>
 
                 {/* Assign To */}
+                {/* Assign To */}
                 <div>
                     <label htmlFor="assign-to" className="block text-lg font-medium text-gray-800 mb-2">
                         Assign To <span className="text-red-500">*</span>
                     </label>
-                    <input
+                    <select
                         id="assign-to"
-                        type="text"
                         value={assignTo}
                         onChange={(e) => setAssignTo(e.target.value)}
-                        placeholder="Enter assignee's name or email"
                         required
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                    />
+                    >
+                        <option value="" disabled>
+                            Select Employee
+                        </option>
+
+                        {
+                            authDataEmployees.map((emp) => (
+                                <option key={emp.email} value={emp.email}>
+                                    {emp.email}
+                                </option>
+                            ))
+                        }
+                    </select>
                 </div>
+
 
                 {/* Category */}
                 <div>
