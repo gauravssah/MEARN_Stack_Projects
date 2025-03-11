@@ -1,0 +1,43 @@
+# Node.js dependencies  
+node_modules/  
+npm-debug.log*  
+yarn-debug.log*  
+yarn-error.log*  
+pnpm-debug.log*  
+
+
+drive-db709-firebase-adminsdk-fbsvc-084079ad39.json
+
+# Environment variables  
+.env  
+.env.local  
+.env.development.local  
+.env.test.local  
+.env.production.local  
+
+# Logs  
+logs  
+*.log  
+npm-debug.log*  
+yarn-debug.log*  
+pnpm-debug.log*  
+
+# Build artifacts  
+dist/  
+build/  
+.out/  
+.next/  
+
+# Editor & OS files  
+.vscode/  
+.idea/  
+*.swp  
+*.swo  
+.DS_Store  
+Thumbs.db  
+
+# Cache & Temp files  
+.cache/  
+.nyc_output/  
+coverage/  
+tmp/  
