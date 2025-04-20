@@ -1,0 +1,358 @@
+/* ---------------------------------------------------------------------------
+   Import Google Fonts
+--------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------------------------------------------------------------------------
+   Global Reset
+   - Removes default margin and padding, and sets box-sizing to border-box.
+--------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------
+   Navbar & Nav Links Styling
+--------------------------------------------------------------------------- */
+
+/* Base styling for all nav links within the navbar */
+.navbar-nav .nav-link {
+  font-weight: 600 !important;
+  /* Semi-bold text */
+  position: relative;
+  /* For positioning the underline pseudo-element */
+  color: white !important;
+  /* White text for high contrast */
+  transition: all 0.3s ease !important;
+  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for non-active nav links */
+.navbar-nav .nav-link:not(.active):hover {
+  color: #dcdcdc !important;
+  /* Lighter text color on hover */
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3) !important;
+  /* Subtle glow */
+}
+
+/* Underline effect for non-active nav links on hover using a pseudo-element */
+.navbar-nav .nav-link:not(.active)::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 0 !important;
+  height: 2px;
+  background-color: white !important;
+  transition: width 0.3s ease, left 0.3s ease !important;
+}
+
+/* Expand underline on hover */
+.navbar-nav .nav-link:not(.active):hover::after {
+  width: 60% !important;
+  left: 20% !important;
+}
+
+/* Active nav link styling: solid underline and bolder text */
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid white !important;
+  font-weight: 700 !important;
+}
+
+/* Additional hover class for extra effects */
+.nav-hover {
+  transition: all 0.3s ease !important;
+}
+
+.nav-hover:hover {
+  color: #dcdcdc !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Dropdown Menu Styling
+--------------------------------------------------------------------------- */
+
+/* Base styling for dropdown menu with a glass-like effect */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  /* Semi-transparent black */
+  backdrop-filter: blur(12px) !important;
+  /* Glass blur effect */
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  min-width: 200px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in animation for dropdown appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for dropdown items */
+.dropdown-menu .dropdown-item {
+  color: white !important;
+  transition: background 0.3s ease, color 0.3s ease !important;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #d1d1d1 !important;
+}
+
+/* Active dropdown item styling (override default Bootstrap active styles) */
+.dropdown-menu .dropdown-item.active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  /* Soft white tint */
+  color: white !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Button Styling
+--------------------------------------------------------------------------- */
+
+/* Hover effect for the Register button */
+.btn-outline-light:hover {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+}
+
+/* Hover effect for the Login button */
+.btn-light:hover {
+  background-color: #f2f2f2 !important;
+  color: #111 !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Logout Button Specific Styling
+   - Enhanced hover effect to clearly signal the logout action.
+--------------------------------------------------------------------------- */
+.logout-btn {
+  background: transparent !important;
+  border: none !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease, color 0.3s ease !important;
+}
+
+/* Increase specificity for the logout button hover effect inside dropdown */
+.dropdown-menu .logout-btn:hover,
+.dropdown-menu button.logout-btn:hover {
+  background-color: rgba(255, 0, 0, 0.3) !important;
+  /* More pronounced red tint */
+  color: #ff4d4d !important;
+  /* Brighter red text */
+}
+
+
+
+/* Spinner Container Centering the Spinner on the Screen */
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Full screen height */
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Spinner Content Alignment */
+.spinner-content {
+  text-align: center;
+}
+
+/* Spinner Text Styling */
+.spinner-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Spinner Animation */
+.spinner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Dot Styling */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+/* Different Delays for Each Dot */
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  animation-delay: 0.4s;
+}
+
+.dot4 {
+  animation-delay: 0.6s;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* ---------------------------------------------------------------------------
+   Footer Links Base Styles with Underline Effect
+--------------------------------------------------------------------------- */
+.footer a {
+  position: relative;
+  /* Needed for positioning the underline pseudo-element */
+  color: #f8f9fa !important;
+  /* Base light text color */
+  text-decoration: none;
+  /* Remove default underline */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  /* Smooth transition for color and glow */
+}
+
+/* Create a pseudo-element for the bottom underline */
+.footer a::after {
+  content: '';
+  /* No text; just a visual line */
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* Position a bit below the text */
+  width: 0;
+  /* Start with zero width */
+  height: 2px;
+  /* Thickness of the underline */
+  background-color: #adb5bd;
+  /* Color of the underline (change as needed) */
+  transition: width 0.3s ease;
+  /* Animate the width */
+}
+
+/* On hover, expand the underline to 100% width */
+.footer a:hover::after {
+  width: 100%;
+}
+
+/* Optionally, change text color or add glow on hover */
+.footer a:hover {
+  color: #dcdcdc !important;
+  /* Lighter text on hover */
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Active state: if a link is marked as active, keep the underline expanded */
+.footer a.active::after {
+  width: 100%;
+}
+
+/* ----------------------------------- */
+
+/* Dashboard Container (applies to AdminDashboard, CreateCategory, Users, CreateProduct) */
+.dashboard-card {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Dashboard Title Styling */
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Spacing for dashboard info rows */
+.dashboard-row {
+  margin-bottom: 1rem;
+}
+
+/* Bold label styling for dashboard card */
+.dashboard-label {
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Custom Dashboard Card Overrides */
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+/* CategoryForm.css */
+
+
+.custom-input {
+  border: 1px solid #000;
+  /* Black border */
+  border-radius: 4px;
+  background-color: #fff;
+  /* White background */
+  color: #000;
+  /* Text color */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+form .form-label {
+  font-weight: bold;
+}
+
+/* Remove blue outline on focus */
+.custom-input:focus {
+  border-color: #000;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Optional: remove focus ring from button */
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
