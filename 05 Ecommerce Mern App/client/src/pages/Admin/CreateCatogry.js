@@ -28,8 +28,8 @@ export default function CreateCategory() {
     const getAllCategory = async () => {
         try {
             const { data } = await axios.get('/api/v1/category/get-category');
-            if (data.success) {
-                setCategories(data.category);
+            if (data?.success) {
+                setCategories(data?.category);
             } else {
                 toast.error(data.message || 'Failed to load categories');
             }
