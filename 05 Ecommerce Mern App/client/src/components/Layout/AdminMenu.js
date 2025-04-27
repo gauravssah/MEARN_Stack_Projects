@@ -48,6 +48,16 @@ function AdminMenu() {
                 </NavLink>
 
                 <NavLink
+                    to="/dashboard/admin/products"
+                    className={({ isActive }) =>
+                        "list-group-item list-group-item-action " +
+                        (isActive ? "bg-dark text-white" : "")
+                    }
+                >
+                    All Products
+                </NavLink>
+
+                <NavLink
                     to="/dashboard/admin/users"
                     className={({ isActive }) =>
                         "list-group-item list-group-item-action " +

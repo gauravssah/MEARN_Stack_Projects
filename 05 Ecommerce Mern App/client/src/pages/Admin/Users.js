@@ -18,7 +18,7 @@ function Users() {
                             className="bg-white text-dark rounded shadow-sm border p-4 w-100"
                             style={{ maxWidth: '800px' }}
                         >
-                            <h2 className="h5 mb-4 border-bottom pb-2">All Users</h2>
+                            <h2 className="h4 mb-4 fw-bold border-bottom pb-3">All Users</h2>
                             {/* List or table of users goes here */}
                             <p>This page will list all the users.</p>
                         </div>

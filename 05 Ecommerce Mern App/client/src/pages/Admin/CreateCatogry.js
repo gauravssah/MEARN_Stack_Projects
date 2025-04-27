@@ -160,7 +160,7 @@ export default function CreateCategory() {
                             style={{ maxWidth: '800px' }}
                         >
                             {/* Page Header */}
-                            <h2 className="h5 mb-4 border-bottom pb-2">Manage Categories</h2>
+                            <h2 className="h4 mb-4 fw-bold border-bottom pb-3">Manage Categories</h2>
 
                             {/* New Category Form */}
                             <div className="mb-4">

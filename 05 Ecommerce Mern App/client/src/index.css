@@ -356,3 +356,58 @@ form .form-label {
   box-shadow: none !important;
   outline: none !important;
 }
+
+
+
+/* Hover effect for product card */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ------------------------ */
+/* Category Select Custom Style */
+.category-select {
+  background-color: #ffffff;
+  /* white background */
+  color: #000000;
+  /* black text */
+  border: 1px solid #000000;
+  /* black border */
+  border-radius: 4px;
+  padding: 8px 12px;
+  outline: none;
+  /* outline hata diya */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus Effect without outline */
+.category-select:focus {
+  border-color: #000000;
+  /* black border even on focus */
+  box-shadow: none;
+  /* koi extra shadow nahi aayegi */
+}
+
+/* Highlight/hover effect */
+.category-select:hover,
+.category-select:active {
+  background-color: #f8f8f8;
+  /* Light background color when hovering or dragging */
+  border-color: #000000;
+  /* Border remains black */
+}
+
+/* For selected option background (no dark background) */
+.category-select option:selected {
+  background-color: #ffffff;
+  /* Light background when option is selected */
+  color: #000000;
+  /* Black text */
+}

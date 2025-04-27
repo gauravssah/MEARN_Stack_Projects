@@ -98,9 +98,11 @@ function CreateProduct() {
                     </div>
 
                     {/* Main Content */}
-                    {/* Main Content */}
-                    <div className="col-md-9">
-                        <div className="bg-white text-dark rounded-3 p-5 shadow border">
+                    <div className="col-md-9 d-flex justify-content-center">
+                        <div
+                            className="bg-white text-dark rounded shadow-sm border p-4 w-100"
+                            style={{ maxWidth: '800px' }}
+                        >
 
                             {/* Heading */}
                             <h2 className="h4 mb-4 fw-bold border-bottom pb-3">Create New Product</h2>
