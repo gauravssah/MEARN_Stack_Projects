@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "name": "1984",
+        "title": "A dystopian novel set in a totalitarian society ruled by Big Brother.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/3.png",
+        "dec": "Big Brother is watching you.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 2,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "title": "The journey of a young boy discovering his magical heritage.",
+        "price": 14.99,
+        "category": "Paid",
+        "image": "src/assets/images/1.png",
+        "dec": "A magical world awaits.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 3,
+        "name": "The Hobbit",
+        "title": "A fantasy adventure of a hobbit named Bilbo Baggins.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/7.png",
+        "dec": "There and back again.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "title": "A story of wealth, love, and the American Dream in the 1920s.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "A portrait of the Jazz Age.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 5,
+        "name": "To Kill a Mockingbird",
+        "title": "A tale of racial injustice and moral growth in the Deep South.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/4.png",
+        "dec": "A fight for justice.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 6,
+        "name": "Pride and Prejudice",
+        "title": "A romantic story of manners and marriage in early 19th century England.",
+        "price": 7.99,
+        "category": "Paid",
+        "image": "src/assets/images/1.png",
+        "dec": "Love and first impressions.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 7,
+        "name": "The Book Thief",
+        "title": "A young girl in Nazi Germany finds solace in stealing books.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/5.png",
+        "dec": "Words are life.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 8,
+        "name": "Moby Dick",
+        "title": "The quest of Captain Ahab to hunt the elusive white whale.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "Call me Ishmael.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 9,
+        "name": "The Catcher in the Rye",
+        "title": "A story about teenage angst and alienation in post-war America.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/7.png",
+        "dec": "Holden Caulfield's journey.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 10,
+        "name": "One Hundred Years of Solitude",
+        "title": "The multi-generational story of the Buendía family in the fictional town of Macondo.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "src/assets/images/6.png",
+        "dec": "Magical realism at its finest.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 11,
+        "name": "A Game of Thrones",
+        "title": "The epic tale of political intrigue and war in the Seven Kingdoms of Westeros.",
+        "price": 15.99,
+        "category": "Paid",
+        "image": "src/assets/images/1.png",
+        "dec": "Winter is coming.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 12,
+        "name": "Frankenstein",
+        "title": "The tragic story of a scientist who creates a sentient creature.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/4.png",
+        "dec": "The birth of a monster.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 13,
+        "name": "The Handmaid's Tale",
+        "title": "A dystopian future where women are subjugated in a totalitarian regime.",
+        "price": 11.99,
+        "category": "Paid",
+        "image": "src/assets/images/5.png",
+        "dec": "Under His eye.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 14,
+        "name": "Sherlock Holmes: The Complete Collection",
+        "title": "The adventures of the famous detective Sherlock Holmes and his companion Watson.",
+        "price": 16.99,
+        "category": "Paid",
+        "image": "src/assets/images/3.png",
+        "dec": "The game's afoot!",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 15,
+        "name": "The War of the Worlds",
+        "title": "An alien invasion threatens humanity's survival in this science fiction classic.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/6.png",
+        "dec": "Earth under attack.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 16,
+        "name": "The Shining",
+        "title": "A chilling tale of isolation and supernatural horror in a haunted hotel.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "All work and no play.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 17,
+        "name": "Fahrenheit 451",
+        "title": "A dystopian future where books are banned and 'firemen' burn them.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/7.png",
+        "dec": "Burning books, burning souls.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 18,
+        "name": "War and Peace",
+        "title": "A historical novel that intertwines the lives of characters during the Napoleonic Wars.",
+        "price": 19.99,
+        "category": "Paid",
+        "image": "src/assets/images/4.png",
+        "dec": "Epic in scale and heart.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 19,
+        "name": "Wuthering Heights",
+        "title": "A passionate and tumultuous love story set on the Yorkshire moors.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/6.png",
+        "dec": "A tale of wild passion.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 20,
+        "name": "Brave New World",
+        "title": "A dystopian vision of a technologically advanced future where society is controlled.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "src/assets/images/5.png",
+        "dec": "Welcome to the World State.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 21,
+        "name": "The Alchemist",
+        "title": "A philosophical journey of a shepherd in search of his personal legend.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/7.png",
+        "dec": "Follow your dreams.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 22,
+        "name": "Dracula",
+        "title": "The iconic vampire novel that started it all, set in 19th century England.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/3.png",
+        "dec": "The original vampire.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 23,
+        "name": "Jane Eyre",
+        "title": "A strong-willed orphan's journey of self-discovery and love.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/4.png",
+        "dec": "Love, independence, and mystery.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 24,
+        "name": "Don Quixote",
+        "title": "A comedic yet profound story of a man who believes he's a knight on a quest.",
+        "price": 14.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "Tilting at windmills.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 25,
+        "name": "Anna Karenina",
+        "title": "A tragic tale of love, infidelity, and Russian aristocracy.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/6.png",
+        "dec": "All happy families are alike.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 26,
+        "name": "Les Misérables",
+        "title": "A story of justice, redemption, and love set during revolutionary France.",
+        "price": 15.99,
+        "category": "Paid",
+        "image": "src/assets/images/1.png",
+        "dec": "Love, loss, and revolution.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 27,
+        "name": "The Odyssey",
+        "title": "The epic journey of Odysseus as he strives to return home after the Trojan War.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/5.png",
+        "dec": "A hero's journey.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 28,
+        "name": "Crime and Punishment",
+        "title": "A psychological tale of murder, guilt, and redemption.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "The weight of conscience.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 29,
+        "name": "The Iliad",
+        "title": "The epic account of the Trojan War and the heroism of Achilles.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/4.png",
+        "dec": "War, wrath, and heroism.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 30,
+        "name": "The Lord of the Rings",
+        "title": "An epic fantasy tale of good versus evil in Middle-earth.",
+        "price": 19.99,
+        "category": "Paid",
+        "image": "src/assets/images/7.png",
+        "dec": "One ring to rule them all.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 31,
+        "name": "The Road",
+        "title": "A post-apocalyptic tale of a father and son's journey for survival.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "src/assets/images/5.png",
+        "dec": "Survival and hope.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 32,
+        "name": "The Picture of Dorian Gray",
+        "title": "A cautionary tale of beauty, vanity, and corruption.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/6.png",
+        "dec": "Eternal youth, eternal damnation.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 33,
+        "name": "The Brothers Karamazov",
+        "title": "A philosophical novel exploring faith, doubt, and morality.",
+        "price": 14.99,
+        "category": "Paid",
+        "image": "src/assets/images/2.png",
+        "dec": "A battle of ideas and souls.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 34,
+        "name": "Slaughterhouse-Five",
+        "title": "A satirical and surreal exploration of war, time travel, and free will.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/3.png",
+        "dec": "So it goes.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 35,
+        "name": "The Kite Runner",
+        "title": "A story of friendship, betrayal, and redemption set in Afghanistan.",
+        "price": 12.99,
+        "category": "Paid",
+        "image": "src/assets/images/1.png",
+        "dec": "A journey of redemption.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 36,
+        "name": "Beloved",
+        "title": "A haunting novel about slavery, memory, and motherhood.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/5.png",
+        "dec": "A ghostly tale of trauma.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 37,
+        "name": "Invisible Man",
+        "title": "A powerful exploration of race and identity in 20th century America.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/4.png",
+        "dec": "Invisible in plain sight.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 38,
+        "name": "Catch-22",
+        "title": "A satirical novel about the absurdities of war and bureaucracy.",
+        "price": 10.99,
+        "category": "Paid",
+        "image": "src/assets/images/6.png",
+        "dec": "A no-win situation.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 39,
+        "name": "The Grapes of Wrath",
+        "title": "A tale of hardship, poverty, and resilience during the Great Depression.",
+        "price": 9.99,
+        "category": "Paid",
+        "image": "src/assets/images/7.png",
+        "dec": "The dust bowl struggle.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    },
+    {
+        "id": 40,
+        "name": "Lord of the Flies",
+        "title": "A group of boys stranded on an island descend into savagery.",
+        "price": 0,
+        "category": "Free",
+        "image": "src/assets/images/1.png",
+        "dec": "Civilization vs. savagery.",
+        "logo": "src/assets/images/booknestlogo.webp"
+    }
+]
